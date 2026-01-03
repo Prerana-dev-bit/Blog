@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404 - Oops!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #0f172a;
+            color: #fff;
+            font-family: 'Comic Sans MS', 'Segoe UI', sans-serif;
+            overflow: hidden;
+        }
+
+        .box {
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 120px;
+            animation: shake 1s infinite;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .emoji {
+            font-size: 70px;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        a {
+            text-decoration: none;
+            background: #22c55e;
+            color: #000;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            background: #16a34a;
+            transform: scale(1.1);
+        }
+
+        @keyframes shake {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(2deg); }
+            50% { transform: rotate(-2deg); }
+            75% { transform: rotate(2deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="emoji">🤦‍♂️</div>
+        <h1>404</h1>
+        <h2>Oops! Page Lost</h2>
+        <p>Category Does Not Exist 😣</p>
+        <a href="/">Take Me Home 🏠</a>
+    </div>
+
+</body>
+</html>
